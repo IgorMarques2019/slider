@@ -1,0 +1,42 @@
+.controls > img {
+  animation:imgCarrouselExit 0.4s forwards;
+} 
+
+img.selected {
+  animation:imgCarrousel 0.4s forwards;
+}
+
+img.previous {
+  animation:imgCarrouselPrev 0.4s forwards;
+}
+
+
+@keyframes imgCarrouselExit {
+  from {
+    transform:translateX(0);
+  }
+
+  to {
+    transform:translateX(-100%);
+  }
+}
+@keyframes imgCarrouselPrev {
+  from {
+    transform:translateX(-100%);
+  }
+
+  to {
+    transform:translateX(0);
+  }
+}
+
+
+@keyframes imgCarrousel {
+  from {
+    transform:translateX(100%);
+  }
+
+  to {
+    transform:translateX(0);
+  }
+}
